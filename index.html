@@ -11,7 +11,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  
+	<link href="https://fonts.googleapis.com/css2?family=Tuffy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Relief&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --primary: #6a11cb;
@@ -21,16 +23,15 @@
       --text-light: #e4e6eb;
       --text-muted: #8b949e;
     }
+   body {
+  margin: 0;
+  font-family: 'Comic Relief', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: var(--bg-dark);
-      color: var(--text-light);
-      scroll-behavior: smooth;
-    }
 
-    /* Preloader */
     #preloader {
       position: fixed;
       width: 100%;
@@ -41,8 +42,6 @@
       justify-content: center;
       z-index: 9999;
     }
-
-    /* Navbar */
     .navbar {
       background: transparent;
       padding: 1rem 2rem;
@@ -55,8 +54,6 @@
     .nav-link:hover, .nav-link.active {
       color: var(--primary);
     }
-
-    /* Hero Section */
     .hero {
       min-height: 90vh;
       display: flex;
@@ -87,8 +84,6 @@
     .btn-custom:hover {
       background: #5517aa;
     }
-
-    /* Section */
     .section {
       padding: 5rem 2rem;
     }
@@ -97,8 +92,6 @@
       margin-bottom: 2rem;
       text-align: center;
     }
-
-    /* Cards */
     .card-dark {
       background: var(--bg-panel);
       border: none;
@@ -119,15 +112,11 @@
     .card-dark:hover img {
       transform: scale(1.1);
     }
-
-    /* Contact Form */
     .form-control, .form-control:focus {
       background: var(--bg-panel);
       border: 1px solid #30363d;
       color: var(--text-light);
     }
-
-    /* Coffee Box */
     .coffee-box {
       text-align: center;
       background: var(--bg-panel);
@@ -149,8 +138,6 @@
     .coffee-box a:hover {
       background: #5517aa;
     }
-
-    /* Footer */
     footer {
       text-align: center;
       padding: 2rem;
@@ -158,42 +145,35 @@
       background: var(--bg-panel);
       color: var(--text-muted);
     }
-    
-    /* Experience Auto-Scroll with Infinity Loop */
-.experience-container {
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  background: var(--bg-panel);
-  border-radius: 1rem;
-  padding: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-.experience-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  animation: scrollUpLinear 15s linear infinite;
-}
-
-.experience-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.experience-list li {
-  padding: 1rem 0;
-  font-size: 1.1rem;
-  color: var(--text-light);
-  text-align: center;
-}
-
-/* Animation Keyframes for seamless scroll */
-@keyframes scrollUpLinear {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
-}
-
+    .experience-container {
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      background: var(--bg-panel);
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    .experience-list-wrapper {
+      display: flex;
+      flex-direction: column;
+      animation: scrollUpLinear 15s linear infinite;
+    }
+    .experience-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .experience-list li {
+      padding: 1rem 0;
+      font-size: 1.1rem;
+      color: var(--text-light);
+      text-align: center;
+    }
+    @keyframes scrollUpLinear {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
   </style>
 </head>
 
@@ -228,7 +208,7 @@
 <section id="hero" class="hero">
   <h1>I'm V. Sanujan</h1>
   <div class="typed-text"></div>
-  <a href="#contact" class="btn btn-custom">Contact Me</a>
+  <a href="mailto:sanujan@example.com?subject=Contact%20Request&body=Hi%20Sanujan,%0D%0A%0D%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0D%0A%0D%0ABest%20Regards," class="btn btn-custom">Contact Me</a>
 </section>
 
 <!-- Services -->
@@ -280,22 +260,15 @@
     </div>
   </div>
 </section>
-<!-- Experience Section -->
+
+<!-- Experience -->
 <section id="experience" class="section">
   <h2>🎯 My Experience</h2>
   <div class="experience-container">
     <div class="experience-list-wrapper">
       <ul class="experience-list">
-        <li>👨‍💻 2025 - Web developer intern - loncey Tech pvt(ltd) , Jaffna</li>
+        <li>👨‍💻 2025 - Web developer intern - loncey Tech pvt(ltd)</li>
         <li>📅 2024 - Software Developer - College of Technology, Jaffna</li>
-        <li>🚀 2024 - Present: Salesforce learning - Yarl Salesforce Ohana</li>
-        <li>🎤 2024 (Aug-Dec): Soft Skills Training - Tube Tamil Program</li>
-        <li>💻 2023 - 2024: Web Design Freelance Projects</li>
-        <li>🏆 2023: Participated in Tech Competitions & Hackathons</li>
-      </ul>
-      <ul class="experience-list"> <!-- duplicate -->
-        <li>📅 2025 - Web developer intern - loncey Tech pvt(ltd)</li>
-        <li>📅 2024 - Present: Software Developer - College of Technology, Jaffna</li>
         <li>🚀 2024 - Present: Salesforce learning - Yarl Salesforce Ohana</li>
         <li>🎤 2024 (Aug-Dec): Soft Skills Training - Tube Tamil Program</li>
         <li>💻 2023 - 2024: Web Design Freelance Projects</li>
@@ -305,28 +278,29 @@
   </div>
 </section>
 
-
 <!-- Buy Me a Coffee -->
 <div class="coffee-box" data-aos="zoom-in">
   <h3>☕ Like my work? Support me with a coffee!</h3>
   <a href="#">Buy Me a Coffee</a>
 </div>
 
-<!-- Contact Form -->
+<!-- Contact Section -->
 <section id="contact" class="section">
   <h2>📞 Contact Me</h2>
-  <form class="row g-3 justify-content-center">
+  <p style="text-align:center;">You can email me directly by clicking "Contact Me" button or use the form below!</p>
+
+  <form action="mailto:sanujan@example.com" method="POST" enctype="text/plain" class="row g-3 justify-content-center mt-4">
     <div class="col-md-5">
-      <input type="text" class="form-control" placeholder="Your Name" required>
+      <input type="text" name="Name" class="form-control" placeholder="Your Name" required>
     </div>
     <div class="col-md-5">
-      <input type="email" class="form-control" placeholder="Your Email" required>
+      <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
     </div>
     <div class="col-10">
-      <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      <textarea name="Message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
     </div>
     <div class="col-10">
-      <button class="btn btn-custom w-100">Send Message</button>
+      <button type="submit" class="btn btn-custom w-100">Send Message</button>
     </div>
   </form>
 </section>
@@ -342,13 +316,10 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-  // Preloader
   window.addEventListener('load', () => {
     document.getElementById('preloader').style.display = 'none';
     AOS.init();
   });
-
-  // Typing Animation
   var typed = new Typed('.typed-text', {
     strings: ["Web-Developer", "UI/UX Designer", "Tech-Student"],
     typeSpeed: 80,
