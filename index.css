@@ -157,3 +157,8 @@
       0% { transform: translateY(0); }
       100% { transform: translateY(-50%); }
     }
+
+    footer a:hover {
+  color: #0d6efd; /* Bootstrap primary color or your custom */
+  text-decoration: none;
+}
